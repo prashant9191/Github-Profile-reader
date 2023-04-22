@@ -60,6 +60,7 @@ function createErrorCard(msg) {
     main.innerHTML = cardHTML
 }
 
+
 function addReposToCard(repos) {
     const reposEl = document.getElementById('repos')
 
@@ -75,6 +76,7 @@ function addReposToCard(repos) {
             reposEl.appendChild(repoEl)
         })
 }
+
 form.addEventListener('submit', (e) => {
     e.preventDefault()
     const user = search.value
